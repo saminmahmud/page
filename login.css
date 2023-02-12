@@ -1,0 +1,178 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    
+}
+
+body{
+    font-family: sans-serif;
+    background-color:rgb(29, 28, 28);
+}
+
+.conteiner{
+    width: 400px;
+    height: 400px;
+    background-color: rgb(255, 255, 255);/*box show hoye gese*/
+    margin:100px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.transition1 {
+    width: 400px;
+    height: 400px;
+    
+    background:linear-gradient(0deg,transparent,rgb(255, 234, 0), rgb(247, 5, 5), rgb(5, 247, 247) );
+    margin:auto;
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    display: flex;
+    transform-origin: bottom right ;   
+    animation:animation 6s infinite linear ;
+}
+
+.transition2 {
+    width: 400px;
+    height: 400px;    
+    background:linear-gradient(0deg,transparent,rgb(255, 234, 0), rgb(247, 5, 5), rgb(5, 247, 247) );
+    margin:auto;
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    display: flex;
+    transform-origin: bottom right ;    
+    animation:animation 6s infinite linear ;
+    animation-delay: -3s;
+}
+
+ @keyframes animation{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.content{
+    width: 393px;
+    height: 393px;
+    background-color:rgb(20, 20, 20) ;
+    margin: auto;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;   
+}
+
+h2{
+    text-align: center;
+    color: aqua;
+    font-weight: bold;
+    margin-top: 55px;    
+}
+
+@keyframes headanimation{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.h31{
+    color: aqua;
+    position: absolute;
+    left: 30px;
+    top: 110px;
+}
+
+.username{
+    background-color: lightcyan;
+    width: 300px;
+    height: 25px;
+    border-radius: 10px;
+    position: absolute;
+    left:30px;
+    top: 140px;
+    font-size: large;
+    border-color: aqua;    
+}
+
+.h32{
+    color: aqua;
+    position: absolute;
+    left: 30px;
+    top: 200px;
+}
+
+.password{
+    background-color: lightcyan;
+    width: 300px;
+    height: 25px;
+    border-radius: 10px;
+    position: absolute;
+    left: 30px;
+    top: 230px;
+    font-size: large;
+    border-color: aqua;
+}    
+
+.forget{
+    position: absolute;
+    left: 34px;
+    top: 265px;
+    color: aqua;
+    font-size: small;   
+}
+
+.forget:hover{
+    font-weight: bolder;
+    color: rgb(234, 77, 9);
+}
+
+.signup{
+    position: absolute;
+    left: 270px;
+    top: 265px;
+    color: aqua;
+    font-size: small;
+}
+
+.signup:hover{
+    font-weight: bolder;
+    color: rgb(234, 77, 9);
+}
+
+a{
+    width: 70px;
+    height: 35px;
+    text-decoration: none;
+    background-color: aqua;
+    color: black;
+    border-radius: 5px ;
+    position: absolute;
+    left: 35px;
+    top: 310px;
+    text-align: center;
+}
+
+a:hover{
+    background-color: rgba(234, 93, 71, 0.951);
+}
+
+.loginlink{
+    text-align: center;
+    position: relative;
+    top: 20%;
+    font-weight: bold;
+    
+}
+
+.loginlink:hover{
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+}
